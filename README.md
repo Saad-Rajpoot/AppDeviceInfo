@@ -30,14 +30,17 @@ Then, run flutter pub get to fetch the new dependencies.
 
 1. **Initialize the package:**
 
+    ```dart
     final appDeviceInfo = await AppDeviceInfo.getInstance();
 
 2. **Initialize device information:**
 
+    ```dart
     await appDeviceInfo.initDeviceInfo(context);
 
 3. **Retrieve app information:**
 
+    ```dart
     String appName = appDeviceInfo.appName;
     String packageName = appDeviceInfo.packageName;
     String version = appDeviceInfo.version;
@@ -45,6 +48,7 @@ Then, run flutter pub get to fetch the new dependencies.
 
 4. **Retrieve device information:**
 
+    ```dart
     if (Theme.of(context).platform == TargetPlatform.android) {
         String? androidModel = appDeviceInfo.androidModel;
         String? androidManufacturer = appDeviceInfo.androidManufacturer;
@@ -56,8 +60,11 @@ Then, run flutter pub get to fetch the new dependencies.
     }
 
 
-## Additional information
+## Additional Information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+For more information about the `AppDeviceInfo` package, visit the [GitHub repository](https://github.com/Saad-Rajpoot/AppDeviceInfo). You can contribute to the package by submitting bug reports, feature requests, or pull requests through the repository's [issue tracker](https://github.com/Saad-Rajpoot/AppDeviceInfo/issues).
+
+We welcome contributions from the community to improve and enhance the functionality of this package. Please refer to the CONTRIBUTING.md file in the repository for guidelines on how to contribute.
+
+If you encounter any issues or have questions about using the package, feel free to open an issue on GitHub. Our team will do our best to address your concerns and provide support.
+
