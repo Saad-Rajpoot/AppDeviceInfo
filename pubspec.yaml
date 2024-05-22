@@ -1,6 +1,6 @@
 name: app_device_info
 description: "A Flutter package that provides comprehensive device and application information."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Saad-Rajpoot/AppDeviceInfo
 license: BSD-3-Clause
 
