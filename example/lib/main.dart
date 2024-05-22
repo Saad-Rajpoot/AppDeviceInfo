@@ -24,11 +24,9 @@ class AppDeviceInfoPackage extends StatelessWidget {
               return FutureBuilder(
                 future: info.initDeviceInfo(context),
                 builder: (context, snapshot) {
-                  if (!snapshot.hasData) {
-                    return const CircularProgressIndicator();
-                  }
                   return Column(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('App Name: ${info.appName}'),
                       Text('Package Name: ${info.packageName}'),
